@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var model = PrintFlowModel()
+    @StateObject private var savedStore = SavedPrintersStore()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Group {
+                switch model.phase {
+                case .selectingPrinter, .loadingPrinter:
+                    PrinterSelectionView(model: model)
+                default:
+                    PrintJobView(model: model)
+                }
+            }
+            .navigationTitle("WBRL Print")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
+        .environmentObject(savedStore)
+        .tint(.indigo)
+        .alert("Something went wrong",
+               isPresented: Binding(get: { model.errorMessage != nil },
+                                    set: { if !$0 { model.errorMessage = nil } })) {
+            Button("OK", role: .cancel) { model.errorMessage = nil }
+        } message: {
+            Text(model.errorMessage ?? "")
+        }
     }
 }
 
