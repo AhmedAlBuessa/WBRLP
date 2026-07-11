@@ -21,7 +21,7 @@ struct ContentView: View {
                     PrintJobView(model: model)
                 }
             }
-            .navigationTitle("WBRL Print")
+            .navigationTitle("PrintSpot")
             .navigationBarTitleDisplayMode(.inline)
         }
         .environmentObject(savedStore)

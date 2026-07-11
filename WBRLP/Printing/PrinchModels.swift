@@ -340,7 +340,7 @@ nonisolated struct AppInfo: Codable {
     static let current = AppInfo(
         client: NameVersion(name: "PRINT_WEB_APP", version: "4.13.0"),
         os: NameVersion(name: "IOS", version: "26.5"),
-        shell: NameVersion(name: "WBRLP", version: "1.0")
+        shell: NameVersion(name: "PrintSpot", version: "1.0")
     )
 }
 

@@ -74,10 +74,10 @@ struct PrinterSelectionView: View {
                 Image(systemName: "printer.fill")
                     .font(.system(size: 44))
                     .foregroundStyle(.indigo)
-                Text("Wood Buffalo Regional Library")
+                Text("PrintSpot")
                     .font(.headline).multilineTextAlignment(.center)
-                Text("Scan, find, or enter a printer to start.")
-                    .font(.subheadline).foregroundStyle(.secondary)
+                Text("Find & print at public printers anywhere.")
+                    .font(.subheadline).foregroundStyle(.secondary).multilineTextAlignment(.center)
             }
             .frame(maxWidth: .infinity)
             .padding(.vertical, 8)
