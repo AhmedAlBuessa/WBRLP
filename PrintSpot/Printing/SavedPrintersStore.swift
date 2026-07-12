@@ -1,6 +1,6 @@
 //
 //  SavedPrintersStore.swift
-//  WBRLP
+//  PrintSpot
 //
 //  Persists the user's saved/favourite printers in UserDefaults.
 //
@@ -31,7 +31,7 @@ struct SavedPrinter: Codable, Identifiable, Equatable {
 final class SavedPrintersStore: ObservableObject {
     @Published private(set) var printers: [SavedPrinter] = []
 
-    private let key = "wbrlp.savedPrinters.v1"
+    private let key = "printspot.savedPrinters.v1"
 
     init() { load() }
 

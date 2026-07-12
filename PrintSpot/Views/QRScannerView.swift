@@ -1,6 +1,6 @@
 //
 //  QRScannerView.swift
-//  WBRLP
+//  PrintSpot
 //
 //  A lightweight AVFoundation QR/barcode scanner wrapped for SwiftUI.
 //

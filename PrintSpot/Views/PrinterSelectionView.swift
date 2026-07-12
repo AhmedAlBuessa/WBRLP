@@ -1,6 +1,6 @@
 //
 //  PrinterSelectionView.swift
-//  WBRLP
+//  PrintSpot
 //
 //  First screen: saved printers, find a printer, scan, or type the id.
 //

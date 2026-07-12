@@ -1,6 +1,6 @@
 //
 //  PrinchAPI.swift
-//  WBRLP
+//  PrintSpot
 //
 //  Async client for the Princh public-printing API.
 //
@@ -110,7 +110,7 @@ actor PrinchAPI {
                     ttlMillis: Int = 86_400_000) async throws -> UploadResult {
         try await ensureToken()
 
-        let boundary = "----WBRLPBoundary\(UUID().uuidString)"
+        let boundary = "----PrintSpotBoundary\(UUID().uuidString)"
         var request = URLRequest(url: PrinchConfig.filesUpload)
         request.httpMethod = "POST"
         request.setValue("multipart/form-data; boundary=\(boundary)",

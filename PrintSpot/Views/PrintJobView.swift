@@ -1,6 +1,6 @@
 //
 //  PrintJobView.swift
-//  WBRLP
+//  PrintSpot
 //
 //  Configure the queue, review pricing, place the order, and show release info.
 //

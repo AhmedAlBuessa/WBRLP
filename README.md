@@ -8,9 +8,6 @@ libraries and public spaces worldwide. Scan the printer's code (or find one
 near you on a map), pick your files, set your options, see the price, and send
 the job for release at the printer.
 
-> Originally built for the Wood Buffalo Regional Library, now generalized to
-> work with any Princh public printer, anywhere in the world.
-
 ## Features
 
 - **Three ways to pick a printer**
@@ -47,7 +44,7 @@ The **Find a printer** directory comes from the public
 ## Project structure
 
 ```
-WBRLP/
+PrintSpot/
 ├─ ContentView.swift              Root view — routes between screens
 ├─ Printing/
 │  ├─ PrinchModels.swift          Codable models for the Princh API
@@ -70,8 +67,8 @@ WBRLP/
 
 ## Building
 
-1. Open `WBRLP.xcodeproj` in Xcode.
-2. Select the **WBRLP** scheme and a simulator or device.
+1. Open `PrintSpot.xcodeproj` in Xcode.
+2. Select the **PrintSpot** scheme and a simulator or device.
 3. Build & run (⌘R).
 
 The app requests **camera** access (to scan printer codes) and, optionally,

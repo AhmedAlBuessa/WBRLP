@@ -1,6 +1,6 @@
 //
 //  FindPrinterView.swift
-//  WBRLP
+//  PrintSpot
 //
 //  Browse/search the global printer directory and pick one to print to.
 //

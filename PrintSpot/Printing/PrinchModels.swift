@@ -1,6 +1,6 @@
 //
 //  PrinchModels.swift
-//  WBRLP
+//  PrintSpot
 //
 //  Codable models for the Princh public-printing REST API (v5),
 //  reverse-engineered from the print.princh.com web app.

@@ -1,6 +1,6 @@
 //
 //  PrinterDirectory.swift
-//  WBRLP
+//  PrintSpot
 //
 //  Fetches the global Princh printer directory used by "Find a printer".
 //  Source: geo-bridge.princh.com/get-locations (public, no auth, ~5k printers).
